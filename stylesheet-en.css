@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+
+@font-face {
+    font-family: Somari;
+    src: url("fonts/alfont_com_ArbFONTS-Somar-Bold.otf") format("opentype");
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: block;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Somari', sans-serif;
+    margin: 0;
+}
+
+/***************** Grid ***************/
+.row {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after {
+    clear: both;
+    content: "";
+    display: table-row;
+}
+
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6 {width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*********** Header styling **********/
+header {
+    width: 100%;
+    height: 86px;
+	background-color: #5F01D0;
+}
+
+div.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+	padding-top: 0%;
+    
+}
+
+.logo {
+    margin: 20px;
+    float:left;
+    width: 150px;
+    height: 40px;
+	color: #ffffff;
+}
+ 
+ .main-img {
+	 background-image: url("img/logo-nobg.png");
+ }
+
+/***************** navigation bar **************/
+.logo {
+	margin: 10px 0 20px 0;
+	max-width: 140px;
+	max-height: 70px;
+	float: left;
+}
+nav {
+    float: right;
+    padding: 25px 20px 0px 0px;
+}
+
+ul.nav-bar-items li {
+    float: left;
+    list-style: none;
+    font-size: 150%;
+    display: inline-block;
+    padding: 10px;
+}
+
+ul.nav-bar-items li  a{
+    text-decoration: none;
+    color: #FFFFFF;    
+}
+
+ul.nav-bar-items li a:hover{
+    color: #FFFFFF;
+	text-decoration: bold;
+	font-size: 32px;
+}
+
+ul.nav-bar-items li a.current{
+    color: #FFFFFF;
+	text-decoration: bold;
+	font-size: 32px;
+
+}
+
+a.menu-icon{
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: url(img/nav.png) no-repeat center;
+}
+
+a.menu-icon:hover{
+    border-radius: 4px 0 0;
+}
+
+/*************** Slideshow container *************/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*************** Section banner *****************/
+section {
+    background: #FFFFFF;
+    width: 100%;
+    margin: 0;
+}
+
+div.banner-inner {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+article p {
+    font-size: 160%;
+    line-height: 150%;
+    text-indent: 2%;
+    padding: 3%;
+    text-align: justify;
+    font-family: 'Alegreya', sans-serif;
+    color: black;
+}
+
+/*************** our values **************/
+#our-values-section {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.our-values-title {
+    background-color: #FE346E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.value-div {
+    color: #FE346E;
+    font-size: 30px;
+    border: #FE346E;
+    border-style: solid;
+    border-radius: 20px 0 20px 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*************** our principles **************/
+#our-principles-section {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.our-principles-title {
+    background-color: #FFC700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.principle-div {
+    color: #FFC700;
+    font-size: 25px;
+    text-align: center;
+    border: #FFC700;
+    border-style: solid;
+    border-radius: 20px 0 20px 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;}
+
+/*************** our objectives *************/
+#our-objectives-section {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.our-objectives-title {
+    background-color: rgb(20,35, 96);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.objectives {
+	text-align: left;
+	font-family: 'somari';
+    font-size: 25px;
+    color: rgb(20,35, 96);
+    margin-left: 15px;
+}
+
+/*************** our message *************/
+#our-message-section {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.our-mission-title {
+    background-color: rgb(0, 212, 119);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.about-paragraph {
+	text-align: center;
+	font-family: 'somari';
+    font-size: 35px;
+    color: rgb(0, 212, 119);;
+}
+
+/********** our projects section *************/
+#our-projects-section {
+    margin-bottom: 40px;
+}
+
+.our-projects-title {
+    background-color: rgb(30,227, 207);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.project-div {
+    border:rgb(30,227, 207);
+    border-style: solid;
+    border-radius: 20px 0 20px 20px;
+    background-color: white;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+
+.project-title {
+    text-align: center;
+    font-family: 'somari';
+    color: rgb(30,227, 207);
+    font-size: 30px;
+}
+
+.project-description {
+    text-align: center;
+    font-family: 'somari';
+    color: rgb(30,227, 207);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.button-div {
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.project-button {
+    background-color: rgb(30,227, 207);
+    border: rgb(30,227, 207);
+    border-radius: 5%;
+    font-size: 20px;
+    color:white;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.project-social {
+    text-align: center;
+    list-style-type: none;
+}
+.project-social li {
+   display: inline; 
+}
+
+.project-social li a {
+    font-size: 200%;
+    padding: 4% 4% 4% 4%;
+    color: rgb(30,227, 207);
+    text-decoration: none;
+}
+
+/********** our members section ***********/
+#our-members-section {
+    padding-bottom: 40px;
+}
+
+.our-members-title {
+    background-color: rgb(225, 138, 92);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.member-img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+.member-div {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: rgb(225, 138, 92);
+    border-style: solid;
+    background-color: white;
+ }
+
+ .member-name {
+    font-family:'somari';
+    font-size: 25px;
+    color:rgb(225, 138, 92);
+    text-align:center
+ }
+
+ .member-position {
+    font-family:'somari';
+    font-size: 20px;
+    color:rgb(225, 138, 92);
+    text-align:center
+ }
+
+/************ seperators *******************/
+.title{
+    font-family:'somari';
+    color:white;
+    text-align:center;
+    font-size: 55px;
+}
+
+.title-black{
+    font-family:'somari';
+    color:black;
+    text-align:center;
+    font-size: 55px;
+}
+
+/******************* footer ********************/
+footer{
+    background-color: #5f01d0;
+    width: 100%;
+}
+
+.footer-img {
+	text-align: center;
+    display:inline;
+    max-width:240px; 
+    max-height:80px;
+}
+
+.social {
+    text-align: center;
+    list-style-type: none;
+}
+.social li {
+   display: inline; 
+}
+
+.social li a {
+    font-size: 200%;
+    padding: 4% 4% 4% 4%;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.social i:hover {
+    color: #AAAAAA;
+}
+
+
+footer.second {
+    border-top: 1px solid #aadcd2;
+    background-color: #ffffff;
+    max-height: 55px;
+    text-align: center;
+    margin: 0;  
+}
+
+
+.second p {
+    padding: 5px 0px 9px 0px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+/****************** Mobile state styles **************/
+@media screen and (max-width:680px) { 
+    div.header-inner {
+        width: 100%;
+        margin: 0;
+    }
+    .logo {
+        margin: 15px 0 20px 0;
+    }
+    
+    a.menu-icon{
+        display: inline-block;
+		margin-left: 25px;
+    }
+    
+    nav ul.nav-bar-items, nav:active ul.nav-bar-items {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 20px;
+        background: #5001D0;
+        right: 25px;
+        top: 60px;
+        border: 1px solid #FFF;
+        border-radius: 20px 0 20px 20px;
+        width: 50%;
+		float: left;
+    }
+    
+    nav:hover ul.nav-bar-items {
+        display: block;
+		float: left;
+    }
+    
+    nav li{
+        text-align: center;
+        width: 100%;
+    }
+    
+	#footer-section {
+		text-align: center;
+	}
+
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-6,
+	.col-8,
+    .col-9,
+    .col-10,
+    .col-11{
+        width:100%;
+    }
+    
+      
+}
+    
+
